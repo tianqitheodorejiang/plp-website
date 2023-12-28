@@ -1,0 +1,142 @@
+body {
+  background-color: #330844;
+}
+
+/* navbar */
+
+#hidden-navbar, #navbar-toggle {
+  display: none;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 10;
+  background-color: #330844;
+}
+
+/* content boxes */
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
+  margin: 5% 5% 0 0;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  max-width: 500px;
+  margin: 5% 0 0 5%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 500px;
+  margin: 0 5% 5% 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  max-width: 500px;
+  margin: 0 0 5% 5%;
+}
+
+.center-box {
+  margin: 3% auto 0 auto;
+  max-width: 750px;
+}
+
+/* page specific */
+
+#page-about {
+  background-image: url("../img/about-bg.jpg");
+  background-position: center;
+}
+
+#page-rush {
+  background-image: url("../img/rush-bg.jpg");
+  background-position: center;
+}
+
+#page-rush-schedule {
+  background-image: url("../img/rush-schedule-bg.jpg");
+  background-position: center;
+}
+
+.rush-schedule-box {
+  margin: 3% auto 0 auto;
+  width: 850px !important;
+  max-width: 850px !important;
+}
+
+#page-house {
+  background-image: url("../img/house-bg.jpg");
+  background-position: center;
+}
+
+#page-house-summer {
+    background-image: url("../img/summer-bg.jpg");
+    background-position: center;
+}
+
+#page-brothers {
+  background-image: url("../img/brothers-bg.jpg");
+  background-position: center;
+}
+
+#page-brothers-the-brotherhood {
+  background-image: url("../img/brotherhood-bg.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+/*ugh*/
+#page-brothers-seniors .clickable-face {
+  width: 16.5%;
+  padding: .4%;
+}
+
+#page-brothers-juniors .clickable-face {
+  width: 14.5%;
+  padding: .4%;
+}
+
+#page-brothers-sophomores .clickable-face {
+  width: 14.5%;
+  padding: .4%;
+}
+
+#page-brothers-freshmen .clickable-face {
+  width: 16.5%;
+  padding: .34%;
+}
+
+#page-brothers-graduates .clickable-face {
+  width: 12%;
+  padding: .4%;
+}
+
+#page-alumni {
+  background-image: url("../img/alumni-bg.jpg");
+  background-position: center;
+}
+
+#page-alumni-donate {
+  background-image: url("../img/donate-bg.jpg");
+  background-position: center;
+}
+
+#page-contact {
+  background-image: url("../img/contact-bg.jpg");
+  background-position: center;
+}

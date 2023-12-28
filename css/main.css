@@ -1,0 +1,390 @@
+body {
+  width: 100%;
+}
+
+.page-container {
+  width: 100%;
+}
+
+/* splash */
+
+#page-splash {
+  background-image: url("../img/splash-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+
+#splash-coa {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.mark {
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#splash-plp {
+  color: #ffffff;
+  font-size: 300%;
+}
+
+#splash-chapter {
+  color: #cccccc;
+  font-size: 150%;
+}
+
+#splash-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#splash-down a {
+  background: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  outline: 0 none;
+  font-size: 500%;
+  color: #ddcc11;
+}
+
+/* navbar */
+
+#navbar-dimmer {
+  display: none;
+}
+
+.navbar.fixed {
+  position: fixed;
+}
+
+.navbar-header {
+  padding: 12px 16px;
+  width: 200px;
+  height: 64px;
+  background-color: #661d88;
+  display: block;
+}
+
+.navbar-entries {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.navbar-entries > li {
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 5px 0 5px 25px;
+  width: 100%;
+  font-size: 16pt;
+}
+
+.navbar-entries > li, .navbar-submenu > li {
+  cursor: pointer;
+}
+
+.navbar-entries > li > div {
+  width: 100%;
+}
+
+.navbar-entries > li.highlighted {
+  color: black;
+  background-color: #ffdd18;
+}
+
+.navbar-entries > li > .navbar-submenu {
+  display: none;
+}
+
+.navbar-entries > li.highlighted > .navbar-submenu {
+  display: block;
+}
+
+.navbar-submenu {
+  list-style-type: none;
+  margin-top: 0px;
+  padding-left: 12px;
+}
+
+.navbar-submenu li {
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+li.selected, .selected > div {
+  color: #661d88;
+  font-weight: bold;
+}
+
+/* section content */
+
+.page {
+  padding-left: 200px;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: auto;
+  position: relative;
+}
+
+.center-box-inner {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.center-box-inner p, .center-box-inner div {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.content {
+  padding: 20px 40px;
+}
+
+.content.dark {
+  background-color: rgba(10, 10, 10, 0.85);
+}
+
+.content h1, .content h2 {
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content h1 {
+  font-size: 20pt;
+}
+
+.content h2 {
+  font-size: 17pt;
+  font-weight: normal;
+}
+
+.content p, ul, li, a {
+  font-size: 11pt;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  line-height: 150%;
+}
+
+.content.dark h1, .content.dark h2, .content.dark a {
+  color: #ddcc11;
+}
+
+.content.dark p, .content.dark ul, .content.dark li {
+  color: white;
+}
+
+.content.light {
+  background-color: rgba(255, 255, 255, 0.90);
+}
+
+.content.light h1, .content.light h2, .content.light a {
+  color: #661d88;
+}
+
+.content.light p, .content.light ul, .content.light li {
+  color: black;
+}
+
+/* page specific */
+
+#location-overlay {
+  background:transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.brother-page h1 {
+  padding-top: 20px;
+  font-size: 40pt;
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brother-page {
+  padding: 0 20%;
+  text-align: center;
+  font-size: 0; /* hack to remove empty space between rows */
+}
+
+.brother-page.purple {
+  background-color: #220630;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.066) 5px, rgba(255,255,255,.066) 10px);
+}
+
+.brother-page.yellow {
+  background-color: #ffdd18;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(0,0,0,.066) 5px, rgba(0,0,0,.066) 10px);
+}
+
+.face-container {
+  width: 70%;
+  height: 74%;
+  margin: auto;
+  /* padding: 10%; */
+  position: absolute;
+  /* for fitting */
+  /* background-color: pink; */
+  top:6%;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.clickable-face {
+  display: inline-block;
+  font-size: 0;
+}
+
+.clickable-face > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.clickable-face img {
+  width: 100%;
+  height: auto;
+}
+
+.clickable-face-name {
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-variant: small-caps;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  padding: 2px 0;
+}
+
+#page-rush-schedule p {
+  margin: 0;
+}
+
+#page-rush-schedule h2 {
+  margin: .5em 0;
+}
+
+#rush-call {
+  padding-top: 2.0em;
+  font-size: 16pt;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#rush-phone {
+  color: #ddcc11;
+}
+
+.rush-day {
+  display: inline-block;
+  width: 100%;
+}
+
+.rush-event-start {
+  width: 6em;
+  text-align: right;
+  vertical-align: top;
+  display: inline-block;
+  color: #bbbbbb;
+}
+
+.rush-event-end {
+  width: 5.5em;
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  color: #bbbbbb;
+}
+
+.rush-event-title {
+  width: 12em;
+  display: inline-block;
+}
+
+.brother-page.purple h1 {
+  color: white;
+}
+
+.brother-page.yellow h1 {
+  color: black;
+}
+
+.clickable-face-name {
+  background-color: rgba(30, 30, 30, 0.50);
+  color: white;
+}
+
+.clickable-face-name {
+  font-size: 12pt;
+}
+
+#donate-form {
+  text-align: center;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  z-index: 100;
+  text-align: center;
+  font-size: 8pt;
+  color: white;
+}
+
+.alumni-decade-bar {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  z-index: 10;
+  height: 100%;
+  background-color: gray;
+}
+
+.alumni-year-bar {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 200px;
+  z-index: 10;
+  height: 100%;
+  background-color: gray;
+}
+
+.alumni-info {
+  width: 900px;
+  max-width: 900px !important;
+  height: 500px;
+}
+
+.alumni-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.alumni-info li {
+  font-size: 150%;
+  color: #661d88;
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+KERBEROS=$1
+if [ -z $KERBEROS ]; then
+  echo "Usage: $0 <kerberos>"
+  exit 1
+fi
+
+# try to avoid merge conflicts even if we force pushed master
+ssh ${KERBEROS}@athena.dialup.mit.edu 'ssh plp@scripts "cd m && git fetch origin master && git reset --hard FETCH_HEAD && git clean -df"'
